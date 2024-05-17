@@ -6,3 +6,47 @@ h1{
 span{
     color: #037bc0;
 }
+
+/*el primer hijo de tipo a dentro de todos los navs */
+/*nav a:first-child{
+    text-transform: uppercase;
+    color:rebeccapurple;
+    font-size: 50px;
+}*/
+
+/*el  hijo enesimo de tipo a dentro de todos los navs */
+/*nav a:nth-child(2){
+    text-transform: uppercase;
+    color: aqua;
+    font-size: 60px;
+}*/
+
+.navegacion{
+    background-color: #e1e1e1;
+}
+
+.navegacion a{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: #037bc0;
+}
+
+.color-rojo{
+    color: red;
+}
+
+/*
+    los nav que tengan la clase navegacion
+ */
+/*nav.navegacion{
+    color: #037bc0;
+    border-color: rebeccapurple;
+}
+/*
+    LOS ELEMENTOS con clase navegacion que esten dentro de un nav
+ */
+/*nav .navegacion{
+    color: #037;
+
+}*/
