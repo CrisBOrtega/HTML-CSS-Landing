@@ -40,6 +40,11 @@ span{
 box model
  */
 
+.nombre-sitio{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
 .sobre-nosotros{
     background-color: red;
     width: 200px;
@@ -49,6 +54,7 @@ box model
     valor por defecto: content-box
      */
     box-sizing: border-box;
+    margin-top: 100px;
 }
 
 /*
