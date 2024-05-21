@@ -37,6 +37,21 @@ span{
 }
 
 /*
+box model
+ */
+
+.sobre-nosotros{
+    background-color: red;
+    width: 200px;
+    padding: 25px;
+    /*box sizing leaves fixed-size setted with "width" property
+    regardless of padding size
+    valor por defecto: content-box
+     */
+    box-sizing: border-box;
+}
+
+/*
     los nav que tengan la clase navegacion
  */
 /*nav.navegacion{
