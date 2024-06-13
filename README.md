@@ -24,8 +24,27 @@ permite darle:
 * height
 * margin
 
-a un elemento inline, lo cual no es posible para los elementos inline:
+a un elemento inline, lo cual no es posible para los elementos inline.
 
+# FlexBox
+
+## Concepto
+
+Alinea en una sola dimension y direccion. **DEBE APLICARSE SOBRE EL ANCESTRO INMEDIATO
+QUE CONTENGA LOS ELEMENTOS A ALINEAR**, porque aplica solo al primer nivel de hijos.
+
+## Propiedades:
+
+* display: **flex** (habilita el contenedor para flex)
+* flex-direction: **row**(izquierda a derecha), **row-reverse**(derecha a izquierda), **column**(arriba a abajo), **column-reverse** (abajo hacia arriba)
+* justify-content: si flex-direction es *row*, alinea contenido al centro, izquierda, derecha. Si flex-direction es *column*, alinea al inicio, centro, final
+
+## Relacion justify-content y align-content
+
+| flex-direction |          justify-content          |                     align-content |
+|:---------------|:---------------------------------:|----------------------------------:|
+| row            | alinear contenido horizontalmente |   alinear contenido verticalmente |
+| column         |  alinear contenido verticalmente  | alinear contenido horizontalmente |
 
 
 
