@@ -12,6 +12,11 @@ a{
     color: #000;
 }
 
+img{
+    max-width: 100%;
+    display: block;
+}
+
 .contenedor{
     /* toma los 1200 totales y lo que sobre */
     /* por lado y lado lo deja para el nav */
@@ -20,6 +25,42 @@ a{
     margin: 0 auto;
     /*tambien valido pero es nueva */
     /*margin-inline: auto;*/
+}
+
+.listado-categorias{
+    display: grid;
+    /* valido 1: */
+    /* grid-template-columns: 200px 200px 200px 200px;*/
+    /* valido 2: */
+    /* grid-template-columns: repeat(4, 200px); */
+    /* con fr: se crean 2 columnas , una de 3 porciones y la oiptra de 1
+    grid-template-columns: 3fr 1fr;*/
+    grid-template-columns: repeat(3, 1fr);
+    /*grid-template-rows: repeat(2, 100px);*/
+    gap: 20px;
+}
+
+.categorias h2{
+    text-align: center;
+}
+
+.categoria a{
+    /*por defecto no sirve porque
+    hipervinculo tiene display inline
+     */
+    text-align: center;
+    /*
+    pero se puede cambiar a display:block
+     */
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.categoria a:hover{
+    background-color: #037bc0;
+    color: #FFF;
+    border-bottom-right-radius: 10px;
 }
 
 

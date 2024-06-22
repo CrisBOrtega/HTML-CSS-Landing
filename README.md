@@ -46,6 +46,23 @@ QUE CONTENGA LOS ELEMENTOS A ALINEAR**, porque aplica solo al primer nivel de hi
 | row            | alinear contenido horizontalmente |   alinear contenido verticalmente |
 | column         |  alinear contenido verticalmente  | alinear contenido horizontalmente |
 
+# Grid
+
+## Concepto:
+
+A diferencia de Flex, Grid permite trabajar en dos direcciones, creando filas o columnas.
+
+## Propiedades:
+
+* display: **grid**(habilita contenedor para grid);
+* grid-template-columns: para agregar columnas
+* grid-template-rows: para agregar filas
+
+## Particularidades:
+
+* medidas recomendadas: **fr(fraccion)**, que distribuye uniformemente las columns o rows
+* 
+
 
 
 
