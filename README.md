@@ -61,9 +61,63 @@ A diferencia de Flex, Grid permite trabajar en dos direcciones, creando filas o 
 ## Particularidades:
 
 * medidas recomendadas: **fr(fraccion)**, que distribuye uniformemente las columns o rows
-* 
 
 
+# Fuentes
+
+Es posible añadir nuevas fuentes con la propiedad **@font-face**
+
+# Unidades Relativas
+
+toman su valor con base a otro elemento. 
+Se adaptan mejor a diferentes resoluciones  y densidades
+de pixeles(mejor opcion cunado el trabajo se verá en la 
+mayor parte de dispositivos).
+Algunos ejemplos:
+
+- em
+- rem: se aconseja utilizarlo junto con el hack 62.5%
+- vh
+- vw
+- porcentajes
+
+**Importante:** Si en el documento, en el estilo css de *html* no se pone fuente, por defecto esta queda de 16px 
+
+# Estandares de Escritura CSS(Usar 1 máximo 2)
+
+## BEM(Block element Modifier): 
+* Se crea un bloque(contenedor principal)
+* El bloque puede tener multiples elementos
+* Cada elemento se identifica con el doble gion bajo
+* El elemento puede tener varios estado o acciones(ej: boton hundido, click en un hipervinculo)
+* Los estilos de estado , accion(modificador), se denotan con doble guion
+
+```
+/*Ejemplos */
+.card{}
+.card__titulo{}
+.card__boton{}
+.card__boton--activo{}
+```
+
+## Modulos CSS:
+
+```
+    .card{}
+    .card h2{}
+    .card img{}
+```
+
+# SMACSS(No muy usado)
+
+Estilos para elementos que comparten propiedades en comun
+
+```
+    #header, #article, #footer{
+        width: 960px;
+        margin: auto;
+    }
+```
 
 
 

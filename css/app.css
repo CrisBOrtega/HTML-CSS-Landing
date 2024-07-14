@@ -1,11 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 html{
     box-sizing: border-box;
+    /* hack para trabajar con rems:*/
+    font-size: 62.5%; /*esto hace igual a 1rem = 10px*/
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
-/**globales**/
 
+
+/**globales**/
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    /* interlineado: se recomienda 2 */
+    line-height: 2;
+}
+
+h1, h2 , h3{
+    font-family: 'Playfair Display', serif;
+    /* estilo para eleiminar el que por defecto se pone
+    en naraja*/
+    margin: 0 0 5rem 0;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3rem;
+}
 a{
     /* evita subrayado en todos los enlaces */
     text-decoration: none;
@@ -21,7 +52,7 @@ img{
     /* toma los 1200 totales y lo que sobre */
     /* por lado y lado lo deja para el nav */
     /* asi se centra el contendido */
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
     /*tambien valido pero es nueva */
     /*margin-inline: auto;*/
@@ -37,7 +68,11 @@ img{
     grid-template-columns: 3fr 1fr;*/
     grid-template-columns: repeat(3, 1fr);
     /*grid-template-rows: repeat(2, 100px);*/
-    gap: 20px;
+    gap: 2rem;
+}
+
+.categorias{
+    padding-top: 5rem;
 }
 
 .categorias h2{
@@ -53,22 +88,26 @@ img{
     pero se puede cambiar a display:block
      */
     display: block;
-    padding: 20px;
-    font-size: 20px;
+    /* los titulos deben tener el mismo espacio arriba y abajo */
+    padding: 2rem;
+    font-size: 2rem;
 }
 
 .categoria a:hover{
     background-color: #037bc0;
     color: #FFF;
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 1rem;
 }
 
 
 
 /** header y navegacion **/
+header{
+    font-size: 3rem;
+}
+
 .nombre-sitio{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 5rem;
     text-align: center;
 }
 
@@ -80,12 +119,12 @@ img{
     /*la linea de navegacion ya no esta limitada por
     la clase contenedor al estar en el div de afuera
      */
-    border-top: #e1e1e1 solid 1px;
+    border-top: #e1e1e1 solid .1rem;
 }
 
 
 .nav-principal{
-    padding: 20px 0px;
+    padding: 2rem 0;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -93,8 +132,27 @@ img{
 
 .hero{
     background-image: url("../img/principal.jpg");
-    height: 550px;
+    height: 55rem;
     background-repeat: no-repeat;
     background-size: cover;
+    /* determina la zona de la imagen a mostrar*/
+    background-position: 1px 1px;
 
+
+}
+
+/* bloque nosotros*/
+.sobre-nosotros{
+    /*background-image: linear-gradient(to right,
+                                      black 10% ,
+                                        red 100%);*/
+    background-image: linear-gradient(to right,
+                                        transparent 50%,
+                                        #037bc0 50% ,
+                                        #037bc0 100% )
+                                        , url(../img/nosotros.jpg);
+    padding: 10rem 0;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100% , 120rem;
 }
